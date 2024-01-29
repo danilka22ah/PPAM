@@ -1,5 +1,4 @@
 const English = {
-  "sign_in_p" : "Sign in",
   "copy_complete_p" : "Copied",
   "link_text_id" : "Direct links or Dropbox links only accepted",
   "not_youtube_links" : "NO YOUTUBE LINKS",
