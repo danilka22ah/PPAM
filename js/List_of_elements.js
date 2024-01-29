@@ -7,7 +7,6 @@ class List_of_elements{
     List_of_elements_get(){
         const array_elements = new Array()
             array_elements.push(
-                sign_in_p_id,
                 copy_complete_p_id,
                 link_text_id,
                 not_youtube_links_id,
