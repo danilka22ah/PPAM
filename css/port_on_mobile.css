@@ -1,0 +1,168 @@
+@media (max-width: 1121px) {
+    html,body {
+        overflow: hidden;
+        scrollbar-width: none;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    ::-webkit-scrollbar{
+        width: 0;
+      }
+    @viewport {
+        user-zoom: fixed;
+      }
+
+    .settings_menu{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        top: 0;
+    }
+
+    .box_stop{
+        position: absolute;
+        width: 10%;
+        height: 100%;
+        right: -10%;
+        border: 1px solid green;
+    }
+
+    .blur_background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+        filter: brightness(0.5);
+        top: 0;
+    }
+    
+    .link_to_add_block{
+        height: 600px;
+        width: 84%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        margin-top: -303px;
+        border-radius: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #0b0b0b;
+        border: 1px solid rgba(255, 0, 0, 0.452);
+    }
+    .link_text{
+        position: absolute;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+    .notifications_box_block{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: right;
+        margin-left: 100%;
+        margin-right: -100%;
+    }
+    .not_youtube_links{
+        position: absolute;
+        color: white;
+        top: 5%;
+        font-weight: 700;
+        font-size: 18px;
+        text-align: center;
+    }
+    .progressbar_to_close{
+        background-color: rgb(0, 0, 0);
+        border: none;
+        height: 12px;
+        width: 110%;
+        position: absolute;
+        top: 99%;
+    }
+    .main{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+    .box_message{
+        width: 100%;
+        height: 140px;
+        background-color: #0e0000;
+        position: absolute;
+        top: 0%;
+        margin-top: 0px;
+        margin-left: 0%;
+        margin-right: 0%;
+        border-top: 0;
+        border-radius: 0px;
+    }
+
+    .notifications_box_message_response_add_music{
+        width: 95%;
+        height: 45%;
+        background: linear-gradient(to left, rgb(143, 0, 0),rgb(61, 0, 0));
+        top: 100px;
+        position: relative;
+        border-radius: 35px;
+        border-bottom: 0;
+        background: rgb(49, 0, 0);
+    }
+
+    .box_message_animation_right_2{
+        transform: translateX(70%);
+        transition: 0.5s;
+    }
+
+    
+    .message_add_name_music_2{
+        font-size: 15px;
+    }
+
+    .box_message_img{
+        position: absolute;
+        top: -15px;
+        height: 118%;
+        width: 270px;
+        filter: brightness(0.3);
+    }
+    .box_message_img_block{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: right;
+    }
+    .c{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        border: 5px solid rgb(0, 0, 0);
+    }
+        /*
+
+            margin-top: -150px;
+                            */
+        .box_message{
+        animation-name: box_message_animation_top;
+        animation-duration: 0.5s;
+        animation-play-state: paused;
+    }
+    @keyframes box_message_animation_top{
+        from{
+            margin-top: 0px;
+        }
+        to{
+            margin-top: -150px;
+        }
+    }
+
+}

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" id="css_id">
+    <link rel="stylesheet" href="css/port_on_mobile.css" id="css_id">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Raleway:wght@100;200&display=swap" rel="stylesheet"> 
+</head>
+<body id="body_id" background="source/images/background.png" width="100%" height="100%">
+  <div class="main" id="main_id">
+        <div id="content_id" class="content">
+
+            <div class="block_pannel_up">
+                <img class="logo" src="source/icons/logo.png" width="180px" height="48px">
+                <button class="sign_in" id="sign_in_id" onclick="sign_in_f()"><span id="sign_in_p_id" class="sign_in_p_2">Войти</span></button>
+            </div>
+
+            <div class="block_pannel_down">
+                <div class="link">
+                <button class="link_discord" id="link_discord_id" onclick="link_discord_f()"><img class="link_discord_img" src="source/icons/discord_logo.png" width="40px" height="30px"> </button>
+            </div>
+            </div>
+
+            <div id="gradient_id" class="gradient"></div>
+            <div id="particles_js" class="particles"></div>
+            <div id="brightness_id" class="brightness"></div>
+
+
+
+            <div class="copy_complete" id="copy_complete_id">
+              <p class="copy_complete_p" id="copy_complete_p_id">Скопировано</p>
+              <img class="copy_complete_img" id="copy_complete_img_id" src="source/icons/accept.png" width="30px" height="30px">
+            </div>
+
+            <div id="link_to_add_block_id" class="link_to_add_block">
+                <div class="link_to_add_block_elements">
+            <p id="link_text_id" class="link_text">Принимаются прямые ссылки или ссылки Dropbox</p>
+            <div class="not_youtube_links_block_elements">
+        <p class="not_youtube_links" id="not_youtube_links_id">БЕЗ ССЫЛОК YOUTUBE</p>
+        <img class="not_youtube_links_img" id="not_youtube_links_img_id" src="source/images/youtube.png" width="150px" height="150px">
+    </div>
+
+    <div class="link_to_add_block_elements_2">
+
+        <div class="link_to_add_block_2">
+        <input class="link_to_add" id="link_to_add_id" placeholder="...">
+            <p class="input_empty" id="input_empty_id">Вставьте ссылку</p>
+        </div>
+        <button type="button" class="btn_public_link" id="btn_public_link_id">Добавить</button>
+    </div>
+    </div>
+    </div>
+</div>
+
+  <div class="box_message" id="box_message_id">
+    <div class="box_message_img_block">
+    <img class="box_message_img" id="box_message_img_id" src="source/icons/music.png" width="350px" height="120%">
+  </div>
+
+    <div class="box_message_elements">
+    <p class="message_add_name_music" id="message_add_name_music_id"></p>
+
+  <div class="id_song_block">
+  <p class="id_song" id="id_song_id">Id:</p>
+  <p class="id_song_copy" id="id_song_copy_id_2" style="cursor: pointer"></p>
+</div>
+
+  <div id="box_message_elements_id" class="message_add_music_2_block">
+    <progress class="progressbar_to_close" id="progressbar_to_close_id" max="500" value="0"></progress>
+    <button type="button" class="box_message_close" id="box_message_close_id">Ок</button>
+  </div>
+    </div>
+  </div>
+
+  <div class="notifications_box_block" id="notifications_box_block_id">
+    <img class="message_icon" id="message_icon_id" src="source/icons/message_icon.png" width="400px" height="400px">
+    <div class="notofications_menu_up_block" id="notofications_menu_up_block_id">
+      <p class="notofications_p" id="notofications_p_id">Уведомления</p>
+    </div>
+    <div class="notifications_box_message_block" id="notifications_box_message_block_id">
+      <div class="notifications_box_not_message_block" id="notifications_box_not_message_block_id">
+        <div class="notifications_box_not_message_block_2" id="notifications_box_not_message_block_2_id">
+        <p class="notifications_box_not_message_p" id="notifications_box_not_message_p_id">Уведомлений нет</p>
+        <img class="not_youtube_links_img" id="not_youtube_links_img_id" src="source/images/youtube.png" width="150px" height="150px">
+      </div>
+      </div>
+    </div>
+    <div class="notifications_block" id="notifications_block_id">
+      <p class="symbol_notifications" id="symbol_notifications_id">▲</p>
+    </div>
+</div>
+</div>
+
+<div class="box_settings" id="box_settings_id">
+  <img src="source/icons/settings.png" width="60%" height="60%" class="box_settings_img" id="box_settings_img_id">
+  <div class="settings_button" id="settings_button_id"></div>
+</div>
+
+<div id="settings_main_block_id" class="settings_main_block">
+<div class="blur_background" id="blur_background_id"></div>
+<div class="settings_menu" id="settings_menu_id">
+  <button class="close_settings" id="close_settings_id">x</button>
+  <div class="settings_menu_up">
+    <p class="settings_menu_up_p" id="settings_menu_up_p_id">Настройки</p>
+  </div>
+  <div class="settings_options_block" id="settings_options_block_id">
+    <button class="button_language" id="button_language_id">Язык</button>
+  </div>
+  <div class="language_block" id="language_block_id">
+    <button class="rus_language" id="rus_language_id">Русский</button>
+    <button class="en_language" id="en_language_id">English</button>
+  </div>
+</div>
+</div>
+</body>
+
+<div id="notifications_box_not_message_p_id"></div>
+
+<script type="module" src="js/save_data.js"></script>
+<script type="module" src="js/get_data.js"></script>
+<script type="module" src="js/Animations.js"></script>
+<script type="module" src="js/get_id.js"></script>
+<script type="module" src="js/main.js"></script>
+<script type="module" src="js/Check_input.js"></script>
+<script type="module" src="js/Timer.js"></script>
+<script type="module" src="js/show_messages.js"></script>
+<script type="module" src="js/Get_position_element.js"></script>
+<script type="module" src="js/List_of_elements.js"></script>
+<script type="module" src="JSON/English_language.js"></script>
+<script type="module" src="JSON/Russian_language.js"></script>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://hammerjs.github.io/dist/hammer.js"></script>
+<script type="text/html" src="js/show_English_language.js"></script>
+
+<script>
+   particlesJS("particles_js",  {
+    "particles": {
+      "number": {
+        "value": 355,
+        "density": {
+          "enable": true,
+          "value_area": 789.1476416322727
+        }
+      },
+      "color": {
+        "value": "#ffa3a3"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+      },
+      "opacity": {
+        "value": 5,
+        "random": false,
+        "anim": {
+          "enable": true,
+          "speed": 0.2,
+          "opacity_min": 0,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 2,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 2,
+          "size_min": 0,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 0.2,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "bubble"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 83.91608391608392,
+          "size": 1,
+          "duration": 3,
+          "opacity": 1,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+</html>
