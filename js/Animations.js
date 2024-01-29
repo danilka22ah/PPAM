@@ -272,6 +272,11 @@ Hammer_onclik_right_2.on("swipeleft swiperight", function(event) {
     }, 500);
   }
 })
+    document.onkeydown = function(event){
+    if(event.keyCode == 27){
+        settings_main_block_id.style.display = 'none'
+    }
+}
 }
 auto_function()
 click_functions()
