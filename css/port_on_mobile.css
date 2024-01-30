@@ -51,6 +51,7 @@
         margin-left: auto;
         margin-right: auto;
         background-color: #0b0b0b;
+        border: 1px solid rgba(255, 0, 0, 0.452);
     }
     .link_text{
         position: absolute;
@@ -79,11 +80,9 @@
         background-color: rgb(0, 0, 0);
         border: none;
         height: 12px;
-        width: 100%;
+        width: 110%;
         position: absolute;
         top: 99%;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
     }
     .main{
         position: relative;
@@ -111,7 +110,7 @@
         background: linear-gradient(to left, rgb(143, 0, 0),rgb(61, 0, 0));
         top: 100px;
         position: relative;
-        border-radius: 12px;
+        border-radius: 35px;
         border-bottom: 0;
         background: rgb(49, 0, 0);
     }
@@ -152,6 +151,7 @@
 
             margin-top: -150px;
                             */
+                            
         .box_message{
         animation-name: box_message_animation_top;
         animation-duration: 0.5s;
@@ -159,11 +159,23 @@
     }
     @keyframes box_message_animation_top{
         from{
-            margin-top: 0px;
+            transform: translateY(0%);
         }
         to{
-            margin-top: -150px;
+            transform: translateY(-100%);
         }
     }
+    
+
+    /*
+    .box_message_animation_top{
+        transform: translateY(20%);
+        transition: 0.5s;
+    }
+    .box_message_animation_top_2{
+        transform: translateY(-20%);
+        transition: 0.5s;
+    }
+    */
 
 }
