@@ -730,7 +730,7 @@ progress::-moz-progress-bar {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.897);
     top: 0px;
-    border-radius: 12px;
+    border-radius: 5px;
     margin-left: 0%;
 }
 
