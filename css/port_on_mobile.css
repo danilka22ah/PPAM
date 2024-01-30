@@ -110,7 +110,7 @@
         background: linear-gradient(to left, rgb(143, 0, 0),rgb(61, 0, 0));
         top: 100px;
         position: relative;
-        border-radius: 35px;
+        border-radius: 12px;
         border-bottom: 0;
         background: rgb(49, 0, 0);
     }
