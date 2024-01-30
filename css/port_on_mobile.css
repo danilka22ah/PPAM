@@ -76,12 +76,7 @@
         text-align: center;
     }
     .progressbar_to_close{
-        background-color: rgb(0, 0, 0);
-        border: none;
-        height: 12px;
-        width: 110%;
-        position: absolute;
-        top: 99%;
+
     }
     .main{
         position: relative;
