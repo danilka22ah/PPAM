@@ -404,14 +404,7 @@ background: none;
     position: absolute;
 }
 .progressbar_to_close{
-    background-color: rgb(0, 0, 0);
-    border: none;
-    height: 12px;
-    width: 100%;
-    position: absolute;
-    top: 99%;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+
 }
 .copy_complete{
     border: 1px solid green;
