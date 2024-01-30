@@ -226,7 +226,6 @@ progress::-webkit-progress-value {
 .box_message{
     width: 600px;
     height: 180px;
-    border: 1px solid red;
     position: absolute;
     top: 100%;
     margin-top: -200px;
