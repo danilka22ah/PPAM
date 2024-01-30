@@ -63,7 +63,6 @@ progress::-webkit-progress-value {
     border-radius: 12px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid rgba(255, 0, 0, 0.452);
     background-color: #0b0b0b;
 }
     canvas {
@@ -163,22 +162,6 @@ progress::-webkit-progress-value {
     box-shadow: 1px 2px 70px -15px rgba(255, 0, 0, 0.74);
     transition: 0.1s;
 }
-.block_pannel_up{
-    position: absolute;
-    height: 60px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #161616;
-    border: 2px solid  rgb(255, 0, 0);
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    width: 100%;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    left: 0;
-}
 .content_img_block{
     display: flex;
     justify-content: center;
@@ -191,19 +174,6 @@ progress::-webkit-progress-value {
     position: relative;
     top: 40%;
     height: 0;
-}
-.block_pannel_down{
-    position: absolute; 
-    left: 0;
-    border: 2px solid  rgb(255, 0, 0);
-    background-color: #161616;
-    border-left: 0;
-    border-bottom: 0;
-    border-right: 0;
-    border-top: 1;
-    bottom: 0;
-    width: 100%;
-    height: 62px;
 }
 .content{
     display: flex;
@@ -232,29 +202,6 @@ progress::-webkit-progress-value {
     margin-right: auto;
     font-size: 30px;
 }
-.sign_in{
-    background-color: red;
-    border: none;
-    border-radius: 3px;
-    font-size: 10px;
-    font: bold 14px serif;
-    height: 30px;
-    position: relative;
-    top: 14px;
-    width: 80px;
-    color: white;
-    background: linear-gradient( #E62937, #6e1420);
-}
-.sign_in:hover{
-    background: linear-gradient(to bottom, rgb(167, 0, 0),rgb(78, 0, 0));
-    box-shadow: 1px 2px 40px -10px rgba(212, 0, 0, 0.808);
-    transition: 0.1s;
-}
-.download:hover{
-    background: linear-gradient(to bottom, rgb(167, 0, 0),rgb(78, 0, 0));
-    box-shadow: 1px 2px 40px -17px rgba(212, 0, 0, 0.808);
-    transition: 0.1s;
-}
 .sign_in_p_2{
     margin-left: 4px;
 }
@@ -266,26 +213,11 @@ progress::-webkit-progress-value {
     top: 0px;
     margin-left: 0px;
 }
-.link_discord{    
-background: none;
-    border: none;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 3px;
-}
 .link{
     display: flex;
     justify-content: center;
     position: relative;
     top: 12px;
-}
-.link_discord_img{
-    filter: brightness(0.4);
-}
-.link_discord_img:hover{
-    filter: brightness(0.6);
-    transition: 0.3s;
 }
 .logo{
     position: relative;
