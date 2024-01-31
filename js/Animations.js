@@ -277,6 +277,11 @@ Hammer_onclik_right_2.on("swipeleft swiperight", function(event) {
         settings_main_block_id.style.display = 'none'
     }
 }
+btn_close_notofications_block_id.addEventListener('click', e => {
+    symbol_notifications_id.style.transform = "rotate(-90deg)"
+    notifications_box_block_id.classList.add('notifications_box_block_right')
+    notifications_box_block_id.classList.add('transition')
+})
 }
 auto_function()
 click_functions()
