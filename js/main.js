@@ -4,6 +4,7 @@ import get_show_data from './show_messages.js';
 import List_of_elements from './List_of_elements.js';
 import English_language from '../JSON/English_language.js';
 import Russian_language from '../JSON/Russian_language.js';
+import elements_id from '../js/get_element_id.js';
 
 //auto_function
 
@@ -56,16 +57,55 @@ function click_functions(){
     let get_data_save_parse = JSON.parse('[' + array_get_data + ']')
     
     for (let i = 0; i < get_data_save_parse.length; i++) {
+
+
       const link_to_add = document.getElementById('link_to_add_id').value
-      message_add_name_music_id.innerHTML = link_to_add + " добавлено!"
+      if(localStorage.English_mode){
+        message_add_name_music_id.innerHTML = link_to_add + " Added!"
+      }else{
+        message_add_name_music_id.innerHTML = link_to_add + " добавлено!"
+      }
       id_song_copy_id_2.innerHTML = get_data_save_parse[i].get_id
       }
 });
 
+
+
+
+
 id_song_copy_id_2.addEventListener('click', e => {
-    copy_complete_id.style.display = 'block'
-    navigator.clipboard.writeText(id_song_copy_id.textContent)
+  copy_complete_id.style.display = 'block'
+  navigator.clipboard.writeText(id_song_copy_id_2.textContent)
+})
+
+const array_get_data = new Array()
+array_get_data.push(data_get.get_data_save()[0])
+let get_data_save_parse = JSON.parse('[' + array_get_data + ']')
+
+for (let i = 0; i < get_data_save_parse.length; i++) {
+  const elements_function = elements_id.Get_elements_id()[i]
+  console.log(elements_function)
+  elements_function.addEventListener('click', e => {
+  navigator.clipboard.writeText(elements_function.textContent)
   })
+
+  elements_function.addEventListener('click', e => {
+    if(copy_complete_id.style.display == 'block'){
+
+    }else{
+      setTimeout(() => {
+        copy_complete_id.style.animation = 'copy_complete_fade 3s'
+      }, 1000)
+      setTimeout(() => {
+        copy_complete_id.style.animationPlayState = 'paused'
+        copy_complete_id.style.display = 'none'
+      }, 3700);
+    }
+    copy_complete_id.style.display = 'block'
+
+  });
+}
+  
 
 en_language_id.addEventListener('click', e => {
   en_language_id.style.opacity = '100%'
