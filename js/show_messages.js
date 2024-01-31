@@ -39,30 +39,34 @@ class show_data{
         }
 
         document.getElementById('notifications_box_message_block_id').innerHTML = display
-        
-        const elements_function = elements_id.Get_elements_id()[i]
-        console.log(elements_function)
-        elements_function.addEventListener('click', e => {
-        navigator.clipboard.writeText(elements_function.textContent)
-        })
-      
-        elements_function.addEventListener('click', e => {
-          if(copy_complete_id.style.display == 'block'){
-      
-          }else{
-            setTimeout(() => {
-              copy_complete_id.style.animation = 'copy_complete_fade 3s'
-            }, 1000)
-            setTimeout(() => {
-              copy_complete_id.style.animationPlayState = 'paused'
-              copy_complete_id.style.display = 'none'
-            }, 3700);
-          }
-          copy_complete_id.style.display = 'block'
-      
-        });
-
         }
+
+
+
+
+for (let i = 0; i < get_data_save_parse.length; i++) {
+  const elements_function = elements_id.Get_elements_id()[i]
+  console.log(elements_function)
+  elements_function.addEventListener('click', e => {
+  navigator.clipboard.writeText(elements_function.textContent)
+  })
+
+  elements_function.addEventListener('click', e => {
+    if(copy_complete_id.style.display == 'block'){
+
+    }else{
+      setTimeout(() => {
+        copy_complete_id.style.animation = 'copy_complete_fade 3s'
+      }, 1000)
+      setTimeout(() => {
+        copy_complete_id.style.animationPlayState = 'paused'
+        copy_complete_id.style.display = 'none'
+      }, 3700);
+    }
+    copy_complete_id.style.display = 'block'
+
+  });
+}
         //const json = data_get.get_data_save()[0]
         //console.log(json)
     }
