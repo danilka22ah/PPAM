@@ -64,7 +64,6 @@ progress::-webkit-progress-value {
     margin-left: auto;
     margin-right: auto;
     background-color: #0f0f0f;
-    background: linear-gradient(to bottom, #131313, rgb(5, 5, 5) 812px);
 }
     canvas {
     display: block;
