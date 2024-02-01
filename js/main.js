@@ -40,7 +40,7 @@ function show_language_English_auto(){
 
 function click_functions(){
 
-  btn_public_link_id.addEventListener('click', function (e) {
+  
    
   btn_public_link_id.addEventListener('click', function (e) {
     if(!!check.check_input_get()[0]){
