@@ -127,7 +127,7 @@
     .box_message_img{
         position: absolute;
         top: -15px;
-        height: 118%;
+        height: 124%;
         width: 270px;
         filter: brightness(0.3);
     }
