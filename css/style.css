@@ -384,7 +384,7 @@ progress::-webkit-progress-value {
     height: 6px;
     width: 100%;
     position: absolute;
-    top: 104%;
+    top: 107%;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
