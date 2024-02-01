@@ -41,6 +41,9 @@ function click_functions(){
 
   btn_public_link_id.addEventListener('click', function (e) {
    
+  btn_public_link_id.addEventListener('click', function (e) {
+    if(!!check.check_input_get()[0]){
+
     if(localStorage.data_check == null){
       localStorage.setItem('data_check', 1)
       data_save.set_data_save_start()
@@ -49,6 +52,9 @@ function click_functions(){
       data_save.set_data_save()
       get_show_data.show_data_click()
     }
+  }else{
+    
+  }
 
 
 
