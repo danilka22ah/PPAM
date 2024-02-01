@@ -1,3 +1,4 @@
+import check from '../js/Check_input.js';
 import data_save from './save_data.js';
 import data_get from './get_data.js';
 import get_show_data from './show_messages.js';
