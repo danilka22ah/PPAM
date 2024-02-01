@@ -9,6 +9,7 @@ const English = {
   "settings_menu_up_p" : "Options",
   "button_language" : "Language",
   "rus_language" : "Russian",
-  "en_language" : "English"
+  "en_language" : "English",
+  "tittle_page" : "Add music • Подвал ГДшеров"
 }
 export default English
