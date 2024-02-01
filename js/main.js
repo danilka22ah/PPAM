@@ -1,4 +1,3 @@
-import check from '../js/Check_input.js';
 import data_save from './save_data.js';
 import data_get from './get_data.js';
 import get_show_data from './show_messages.js';
@@ -6,6 +5,7 @@ import List_of_elements from './List_of_elements.js';
 import English_language from '../JSON/English_language.js';
 import Russian_language from '../JSON/Russian_language.js';
 import elements_id from '../js/get_element_id.js';
+import check from '../js/Check_input.js';
 
 //auto_function
 
@@ -32,6 +32,8 @@ function show_language_English_auto(){
   }   
   en_language_id.style.opacity = '100%'
   rus_language_id.style.opacity = '60%'
+  
+  document.title = English_language.tittle_page;
 }
 
 }
@@ -40,8 +42,6 @@ function show_language_English_auto(){
 
 function click_functions(){
 
-  
-   
   btn_public_link_id.addEventListener('click', function (e) {
     if(!!check.check_input_get()[0]){
 
@@ -56,7 +56,6 @@ function click_functions(){
   }else{
     
   }
-
 
 
     const array_get_data = new Array()
@@ -137,6 +136,8 @@ function show_language_English(){
     }
       List_of_elements.List_of_elements_get()[i].innerHTML = array_elements[i]
   }
+  document.title = English_language.tittle_page;
+
 }
 
 function show_language_Russian(){
@@ -148,8 +149,8 @@ function show_language_Russian(){
     }
       List_of_elements.List_of_elements_get()[i].innerHTML = array_elements[i]
   }
+  document.title = Russian_language.tittle_page;
 }
-
 }
 
 auto_function()
