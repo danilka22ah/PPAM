@@ -32,7 +32,7 @@ function show_language_English_auto(){
   }   
   en_language_id.style.opacity = '100%'
   rus_language_id.style.opacity = '60%'
-  
+
   document.title = English_language.tittle_page;
 }
 
@@ -136,6 +136,8 @@ function show_language_English(){
     }
       List_of_elements.List_of_elements_get()[i].innerHTML = array_elements[i]
   }
+  const link_to_add = document.getElementById('link_to_add_id').value
+  message_add_name_music_id.innerHTML = link_to_add + " Added!"
   document.title = English_language.tittle_page;
 
 }
@@ -149,6 +151,8 @@ function show_language_Russian(){
     }
       List_of_elements.List_of_elements_get()[i].innerHTML = array_elements[i]
   }
+  const link_to_add = document.getElementById('link_to_add_id').value
+  message_add_name_music_id.innerHTML = link_to_add + " добавлено!"
   document.title = Russian_language.tittle_page;
 }
 }
