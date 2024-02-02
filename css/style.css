@@ -508,6 +508,7 @@ progress::-webkit-progress-value {
     border-radius: 12px;
     border-bottom: 0;
     background: rgb(49, 0, 0);
+    overflow: clip
 }
 .message_icon{
     position: absolute;
