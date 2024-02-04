@@ -5,7 +5,7 @@ import get_position_element from './Get_position_element.js';
 
 let drag_check = false
 
-function auto_function(){
+function auto_function(){    
 input_empty_id.classList.remove('input_empty')
 input_empty_id.style.opacity = '0'
 particles_js.style.animation = 'particles_animation 5s infinite'
@@ -88,6 +88,8 @@ btn_public_link_id.addEventListener('click', function (event) {
 
             if(window.innerWidth < time_out_element.x){
                 box_message_id.style.animation = 'box_message_animation_top 0.5s'
+                //box_message_id.classList.toggle('box_message_animation_top')
+                console.log('box_message_animation_top')
                 btn_public_link_id.setAttribute('disabled', true)
                 setTimeout(() => {
                     btn_public_link_id.removeAttribute('disabled', false)
@@ -106,6 +108,7 @@ btn_public_link_id.addEventListener('click', function (event) {
         drag_check = true
         box_message_id.style.animationPlayState = 'running'
         box_message_id.style.animation = 'box_message_animation_left 0.5s'
+        box_message_id.classList.toggle('box_message_animation_left')
         box_message_id.classList.add('box_message_left')
     }else{
         btn_public_link_id.removeAttribute('disabled', false)
@@ -272,7 +275,8 @@ Hammer_onclik_right_2.on("swipeleft swiperight", function(event) {
     }, 500);
   }
 })
-    document.onkeydown = function(event){
+
+document.onkeydown = function(event){
     if(event.keyCode == 27){
         settings_main_block_id.style.display = 'none'
     }
@@ -280,7 +284,16 @@ Hammer_onclik_right_2.on("swipeleft swiperight", function(event) {
 btn_close_notofications_block_id.addEventListener('click', e => {
     symbol_notifications_id.style.transform = "rotate(-90deg)"
     notifications_box_block_id.classList.add('notifications_box_block_right')
+    notifications_box_block_id.classList.remove('notifications_box_block_left')
     notifications_box_block_id.classList.add('transition')
+    setTimeout(() => {
+        notifications_box_block_id.classList.remove('transition')
+    }, 500);
+
+    setTimeout(() => {
+        notifications_box_block_id.classList.remove('notifications_box_block_right')
+    }, 500);
+    
 })
 }
 auto_function()
