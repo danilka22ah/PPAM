@@ -90,7 +90,6 @@ let get_data_save_parse = JSON.parse('[' + array_get_data + ']')
 
 for (let i = 0; i < get_data_save_parse.length; i++) {
   const elements_function = elements_id.Get_elements_id()[i]
-  console.log(elements_function)
   elements_function.addEventListener('click', e => {
   navigator.clipboard.writeText(elements_function.textContent)
   })
