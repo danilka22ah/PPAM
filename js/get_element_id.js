@@ -9,9 +9,6 @@ class Get_elements_id{
     Get_elements_id(){
         const array_elements = new Array()
 
-        const array_get_data = new Array()
-        array_get_data.push(data_get.get_data_save()[0])
-        let get_data_save_parse = JSON.parse('[' + array_get_data + ']')
         const buttons = document.querySelector('.notifications_box_message_response_block')
         let div_parent = buttons.parentElement.childNodes
 
