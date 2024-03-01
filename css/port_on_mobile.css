@@ -20,6 +20,7 @@
         display: flex;
         justify-content: center;
         top: 0;
+        user-zoom: fixed;
     }
 
     .box_stop{
