@@ -10,7 +10,6 @@ import check from '../js/Check_input.js';
 //auto_function
 
 function auto_function(){
-  console.log('f')
   if(localStorage.data_save){
     notifications_box_not_message_block_id.style.display = 'none'
     get_show_data.show_data_auto()
@@ -159,4 +158,3 @@ function show_language_Russian(){
 
 auto_function()
 click_functions()
-console.log('f')
